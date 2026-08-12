@@ -1,0 +1,359 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background: #f5f1e8;
+    color: #20201c;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+  background-color: #ffffff;
+  position: relative;
+
+
+
+
+  a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 900;
+    padding: 5px;
+     
+
+  }
+}
+
+
+
+.logo {
+
+  width: 150px;
+  display: flex;
+
+
+  transition:
+    transform 0.4s ease,
+    filter 0.4s ease;
+
+  transform-style: preserve-3d;
+
+  &:hover {
+    transform:
+      perspective(500px) translateZ(30px) scale(1.08);
+
+
+  }
+}
+
+
+
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    transition: width 0.4s ease;
+}
+
+nav a:hover {
+    color: #26d140;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+
+.hero {
+    width: 100%;
+    min-height: 335px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+
+.hero-text {
+    background: #e8d99d;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 50px 12%;
+}
+
+.mini-titulo {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    color: #81775c;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 4vw, 58px);
+    line-height: 0.95;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.hero h1 em,
+.produtos h2 em {
+    color: #a9432e;
+    font-style: italic;
+}
+
+.hero p {
+    max-width: 330px;
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+
+    color: #746e5b;
+    margin-bottom: 20px;
+}
+
+
+
+
+.botao {
+    width: fit-content;
+
+    padding: 21px 55px;
+
+    background: #17211d;
+    color: white;
+
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+
+    text-decoration: none;
+    letter-spacing: .5px;
+}
+
+
+
+
+.hero-imagem {
+    overflow: hidden;
+}
+
+.hero-imagem img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+
+
+.produtos {
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 55px 5% 80px;
+}
+
+
+
+.produtos-topo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.produtos-topo .mini-titulo {
+    margin-top: 10px;
+}
+
+.produtos h2 {
+    font-size: clamp(35px, 4vw, 52px);
+    font-weight: 400;
+    line-height: 1;
+}
+
+
+
+.filtros {
+    display: flex;
+    gap: 25px;
+
+    border-bottom: 1px solid #ddd7c9;
+
+    margin-top: 35px;
+    padding-bottom: 12px;
+}
+
+.filtros a {
+    color: #797466;
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+
+    text-decoration: none;
+}
+
+.filtros a:first-child {
+    color: #222;
+    font-weight: bold;
+}
+
+
+
+.resultado {
+    margin-top: 10px;
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+
+    color: #8d8779;
+}
+
+
+
+
+.grid-produtos {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-top: 15px;
+}
+
+
+
+
+
+.card {
+    min-width: 0;
+}
+
+.imagem-card {
+    height: 400px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.imagem-card img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+
+
+.imagem-card span {
+    position: absolute;
+
+    right: 10px;
+    bottom: 10px;
+
+    background: #f5f1e8;
+
+    padding: 10px 7px;
+
+    font-family: Arial, sans-serif;
+    font-size: 7px;
+
+    color: #6d685d;
+}
+
+
+
+
+.card h3 {
+    font-size: 30px;
+    font-weight: 400;
+
+    margin-top: 20px;
+}
+
+
+
+.card p {
+    font-family: Arial, sans-serif;
+
+    color: #888174;
+
+    font-size: 15px;
+    line-height: 1.5;
+
+    margin-top: 5px;
+}
+
+
+
+
+.card strong {
+    display: block;
+
+    margin-top: 8px;
+
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+
+
+
+@media (max-width: 800px) {
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-text {
+        min-height: 300px;
+        padding: 45px 8%;
+    }
+
+    .hero-imagem {
+        height: 350px;
+    }
+
+    .produtos {
+        padding: 45px 6%;
+    }
+
+    .produtos-topo {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .grid-produtos {
+        grid-template-columns: 1fr;
+    }
+
+    .imagem-card {
+        height: 350px;
+    }
+}
