@@ -2,6 +2,11 @@
 <html lang="pt-br">
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
@@ -10,14 +15,10 @@
 
 <body>
     <header>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet">
+
         <img src="images/logo header.png" alt="" class="logo">
         <nav>
-            <a href="#" class="especial" >Home</a>
+            <a href="#" class="especial">Home</a>
             <a href="#">Cardápio</a>
             <a href="#">Sobre nós</a>
             <a href="#">Contato</a>
@@ -28,24 +29,22 @@
     <div class="hero">
         <div class="heroContent">
             <p>CAFÉS DE ORIGEM, SÃO PAULO</p>
-            <h1>Seu momento merece um</h1>
-            <h1>ritual.</h1>
-            <h4>Café especial, pão que sai quente e uma pausa bem feita — todos os dias, no coração da Vila Madalena.
-            </h4>
+            <h1>Seu momento merece um <br> <span>ritual.</span></h1>
+            <h1></h1>
+            <h4>Café especial, pão que sai quente e uma pausa bem feita — todos os dias, no coração da Vila <br> Madalena.</h4>
             <div class="conhecaCardapio">
                 <p>CONHEÇA O CARDÁPIO</p>
                 <img src="" alt="">
                 <p>NOSSA HISTÓRIA</p>
                 <img src="" alt="">
             </div>
-            <div class="conhecaCardapio">
-                <p>Rua Harmonia, 210, Vila Madalena</p>
-                <p class="2">· fechado · abre amanhã às 8h</p>
+            <div class="localizacao">
+                <p>Rua Harmonia, 210, Vila Madalena <span> · fechado · abre amanhã às 8h</span></p>
             </div>
 
         </div>
         <div class="heroImage">
-            <img src="" alt="">
+            <img src="images/product-espresso.jpg" alt="">
             <div class="cheiro">
 
             </div>
@@ -53,28 +52,27 @@
     </div>
 
     <div class="posHero">
-        <h2>O bom café pede tempo, origem e companhia.</h2>
-        <img src="" alt="">
-        <h2>Sem atalhos. Sem pressa. Só ritual.
-        </h2>
+        <h2>O bom café pede tempo, origem e companhia. </h2>
+        <h2 class="c">✦</h2>
+        <h2>Sem atalhos. Sem pressa. Só ritual.</h2>
     </div>
 
     <!-- CONTEUDO -->
     <div class="content">
-        <h4>FEITO PARA A SUA PAUSA</h4>
+        <p>FEITO PARA A SUA PAUSA</p>
         <div class="contentCafe">
-            <div class="daSemana">
+            <div class="card daSemana">
                 <h3>O GRÃO DA SEMANA</h3>
                 <h2>Catuaí amarelo</h2>
                 <p>Do Sítio Santa Clara, em Minas Gerais. Na xícara: mel, castanha e final de caramelo.</p>
                 <a href="#">PROVAR NO COADO</a>
             </div>
-            <div class="noBalcao">
+            <div class="card noBalcao">
                 <h3>NO BALCÃO</h3>
                 <h2>Pão quente às 9h</h2>
                 <p>Todo dia, nossa fornada de queijo canastra encontra o primeiro espresso.</p>
             </div>
-            <div class="passouAqui">
+            <div class="card passouAqui">
                 <h3>QUEM PASSOU POR AQUI</h3>
                 <h2>"Meu lugar para desacelerar."</h2>
                 <p>Marina, vizinha de mesa e de longa data.</p>
