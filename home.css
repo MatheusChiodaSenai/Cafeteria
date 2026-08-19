@@ -174,6 +174,31 @@ header {
         height: 85%;
         object-fit: cover;
     }
+
+    .cheiro {
+        display: flex;
+        width: 180px;
+        height: 60px;
+        padding: 10px;
+        background-color: white;
+        position: absolute;
+        gap: 10px;
+        z-index: 10;
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 500;
+        justify-content: center;
+        margin-bottom: -500px;
+        margin-right: -400px;
+
+        h5{
+            color: #d43737;
+            font-size: 20px;
+
+        }
+        p{
+            color: #172923;
+        }
+    }
 }
 
 .posHero {
@@ -298,39 +323,158 @@ section {
 }
 
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #22362f;
-    color: #f6f3ef;
-    padding: 20px 40px;
-    font-family: sans-serif;
-    font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #22362f;
+ color: #ffffff;
+  padding: 20px 40px;
+  font-family: sans-serif;
+  font-size: 14px;
 }
+
+
 
 
 .footer-logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
+
 
 .logo-img {
-    width: 32px;
-    height: 32px;
-    border-radius: 4px;
+  width: 150px;
+ 
 }
 
+
 .logo-text {
-    font-weight: bold;
-    letter-spacing: 2px;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
+
+
 
 
 .footer-tagline {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
+
 .footer-copyright {
-    opacity: 0.8;
+  opacity: 0.8;
+}
+
+
+
+
+
+
+.banner-section {
+  display: flex;
+  min-height: 80vh;
+}
+
+
+
+
+.banner-content {
+  flex: 1;
+  background-color: #122921;
+  color: #ffffff;
+  padding: 60px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+
+
+.subtitle {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #a0a0a0;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+}
+
+
+
+
+.subtitle::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 20px;
+  height: 2px;
+  background-color: #e04e38;
+}
+
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+
+.highlight {
+  font-style: italic;
+  color: #e04e38;
+}
+
+
+.description {
+  font-size: 1rem;
+  color: #cccccc;
+  max-width: 400px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+
+
+
+.btn-whatsapp {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+ 
+}
+
+
+
+
+.banner-image {
+  flex: 1;
+}
+
+
+.banner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .banner-section {
+    flex-direction: column;
+  }
+ 
+  .banner-content {
+    padding: 40px 20px;
+  }
 }
