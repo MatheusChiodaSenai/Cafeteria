@@ -1,0 +1,461 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F4EFE5;
+
+}
+
+a {
+    color: #172923;
+    text-decoration: none;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+    height: 80px;
+    background-color: #F4EFE5;
+
+    a {
+        font-weight: 500;
+    }
+
+    .logo {
+        width: 150px;
+
+    }
+
+
+    nav {
+        display: flex;
+        gap: 20px;
+
+        a {
+            font-weight: 500;
+            font-family: Arial;
+        }
+    }
+
+    .especial {
+        display: inline;
+       
+    }
+
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.4s ease;
+}
+
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #d43737;
+    transition: width 0.4s ease;
+}
+
+
+
+
+nav a:hover::after {
+    width: 100%;
+}
+}
+
+
+.topo {
+    width: 90%;
+    max-width: 1250px;
+    margin: auto;
+    padding-top: 45px;
+    position: relative;
+}
+
+.topo > p {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 64px;
+    line-height: 0.95;
+    font-weight: 400;
+}
+
+h1 span {
+    color: #9b3928;
+    font-style: italic;
+}
+
+
+.barra{
+    display: 15px;
+    gap: 15px;
+}
+
+.barras {
+    display: flex;
+    gap: 20px;
+    margin-left:230px;
+    padding: 40px;
+}
+
+.barra {
+    width: 190px;
+    height: 32px;
+    margin-left: 40px;
+}
+
+.preenchida {
+    background-color: #176b4f;
+}
+
+.vazia {
+    background-color: transparent;
+    border: 2px solid #b8b8b8;
+    box-sizing: border-box;
+}
+
+
+
+.contato {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    padding-top: 25px;
+}
+
+
+
+.informacoes {
+    font-size: 40px;
+    gap: 30px;
+    
+}
+
+.linha-infos {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 0.8fr;
+    gap: 35px;
+    border-top: 1px solid #d7d5ce;
+    padding-top: 25px;
+}
+
+.titulo {
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #B53A27;
+    margin-bottom: 18px;
+}
+
+.info h2 {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.info p:not(.titulo) {
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.info a {
+    text-decoration: none;
+    
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+
+
+.horario {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+
+.horario p {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.horario strong {
+    font-weight: normal;
+    font-size: 15px;
+    color: #777;
+}
+
+.horario span {
+    font-size: 15px;
+}
+
+
+
+
+.newsletter {
+    border-top: 1px solid #d7d5ce;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+.newsletter h2 {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 28px;
+}
+
+.email {
+    border-bottom: 1px solid #aaa;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-bottom: 100px;
+}
+
+.email input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 12px;
+}
+
+.email button {
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+.mapa {
+    position: absolute;
+    height: 700px;
+    width: 700px;
+    overflow: hidden;
+    left: 950px;
+    top: 100px;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+
+
+.mapa-info {
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 18px;
+    width: 145px;
+    margin-left: 50px;
+    
+}
+
+.mapa-info p {
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+    color: #B53A27;
+}
+
+.mapa-info button {
+    background-color: #1d211d;
+    color: white;
+    border: none;
+    padding: 11px 13px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #22362f;
+ color: #ffffff;
+  padding: 20px 40px;
+  font-family: sans-serif;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+
+
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.logo-img {
+  width: 150px;
+ 
+}
+
+
+.logo-text {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+
+
+
+.footer-tagline {
+  opacity: 0.8;
+}
+
+
+.footer-copyright {
+  opacity: 0.8;
+}
+
+
+
+
+
+
+.banner-section {
+  display: flex;
+  min-height: 80vh;
+}
+
+
+
+
+.banner-content {
+  flex: 1;
+  background-color: #122921;
+  color: #ffffff;
+  padding: 60px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+
+
+.subtitle {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #a0a0a0;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+}
+
+
+
+
+.subtitle::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 20px;
+  height: 2px;
+  background-color: #e04e38;
+}
+
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+
+.highlight {
+  font-style: italic;
+  color: #e04e38;
+}
+
+
+.description {
+  font-size: 1rem;
+  color: #cccccc;
+  max-width: 400px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+
+
+
+.btn-whatsapp {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+ 
+}
+
+
+
+
+.banner-image {
+  flex: 1;
+}
+
+
+.banner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .banner-section {
+    flex-direction: column;
+  }
+ 
+  .banner-content {
+    padding: 40px 20px;
+  }
+}
+
