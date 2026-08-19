@@ -1,0 +1,545 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #F4EFE5;
+    color: #172923;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+
+a {
+    color: #172923;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+    height: 80px;
+
+    a {
+        font-weight: 500;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    nav {
+        display: flex;
+        gap: 20px;
+
+        a {
+            font-weight: 500;
+            font-family: Arial;
+        }
+    }
+
+    .especial {
+        display: inline;
+       
+    }
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.4s ease;
+}
+
+nav a::after {
+   
+ content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #d43737;
+    transition: width 0.4s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+}
+
+.hero {
+    display: flex;
+    width: 100%;
+
+    .fundo-img {
+        background-image: url(about-hero.jpg);
+        height: 750px;
+        background-position: center;
+        background-size: cover;
+        width: 50%;
+    }
+
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 30px;
+    width: 50%;
+    justify-content: center;
+    background-color:  #172923;
+
+
+    .comeco {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: rgb(203, 150, 113);
+    }
+
+    h2 {
+        font-family: "Arimo", sans-serif;
+        display: flex;
+        color:  #E9D9A3;
+        font-size: 30px;
+    }
+
+    h1 {
+        font-family: "Arimo", sans-serif;
+        display: flex;
+        color: antiquewhite;
+        font-size: 50px;
+    }
+
+    br{
+        color: aliceblue;
+    }
+
+    p{
+        color: aliceblue;
+    }
+
+}
+
+
+.fundo{
+  margin: 0;
+  padding: 40px;
+  background-color: #f4eee3;
+}
+
+.Fundacoes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.071);
+  max-width: 900px;
+  margin: 0 auto;
+  flex-direction: row;
+}
+
+.fundado {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+}
+
+
+.fundado:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 15%;
+  height: 70%;
+  width: 1px;
+ background-color: rgba(0, 0, 0, 0.1);
+}
+
+.fundado .number {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #443f3f;
+  margin-bottom: 12px;
+  line-height: 1;
+}
+
+.fundado .label {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  color: #555555;
+  text-transform: uppercase;
+}
+
+
+cabeca {
+  margin: 0;
+  padding: 60px 20px;
+  background-color: #f4eee3;
+}
+
+.xicaras {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Cabeçalho */
+.xicara{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(174, 15, 15, 0.1);
+}
+
+.subline {
+  width: 20px;
+  height: 1px;
+  background-color: #a84227;
+  margin-top: 75px;
+}
+
+.subtitle {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  color: #333333;
+  text-transform: uppercase;
+  margin-top: 75px;
+}
+
+/* Contêiner Pai */
+.origens {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+/* Aplicando o mesmo estilo para as 3 classes distintas */
+.origem,
+.receitas,
+.balcao {
+  flex: 1;
+  padding: 40px 30px 40px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Linha divisória vertical (apenas nos cards de Receitas e Balcão) */
+.receitas::before,
+.balcao::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 15%;
+  height: 70%;
+  width: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Números em vermelho/terracota */
+.origem .number,
+.receitas .number,
+.balcao .number {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.75rem;
+  color: #a84227;
+  margin-bottom: 20px;
+  display: block;
+}
+
+/* Títulos h3 */
+.origem h3,
+.receitas h3,
+.balcao h3 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111111;
+  margin: 0 0 16px 0;
+}
+
+/* Parágrafos */
+.origem p,
+.receitas p,
+.balcao p {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555555;
+  margin: 0;
+}
+
+
+.cabecalho {
+  margin: 0;
+  padding: 60px 20px;
+  background-color: #e8d9a9;
+}
+
+.pessoas {
+    width: 100%;
+}
+
+.pessoas {
+  background-color: #E6D9A5; /* Amarelo exato da imagem */
+  padding: 60px 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Envolvente do conteúdo para manter alinhado e centralizado */
+.pessoas .pessoa, 
+.pessoas .theo {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Cabeçalho */
+.pessoa {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  margin-bottom: 40px;
+}
+
+.pessoa .subline {
+  width: 20px;
+  height: 1px;
+  background-color: #a84227;
+}
+
+.pessoa .subtitle {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+/* Container que coloca os dois cards lado a lado na horizontal */
+.theo {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  width: 100%;
+}
+
+/* Card individual */
+.card {
+  flex: 1;
+  display: flex;
+  flex-direction: row; /* Foto à esquerda e texto à direita */
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* Container da Imagem */
+.image {
+  width: 180px;
+  height: 180px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Conteúdo de Texto */
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content .role {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+  color: #333333;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.card-content blockquote {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  line-height: 1.15;
+  color: #111111;
+  margin: 0 0 16px 0;
+  font-weight: 500;
+}
+
+.card-content p {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #555555;
+  margin: 0;
+}
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #22362f;
+ color: #ffffff;
+  padding: 20px 40px;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+
+
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.logo-img {
+  width: 150px;
+ 
+}
+
+
+.logo-text {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+
+
+
+.footer-tagline {
+  opacity: 0.8;
+}
+
+
+.footer-copyright {
+  opacity: 0.8;
+}
+
+
+
+
+
+
+.banner-section {
+  display: flex;
+  min-height: 80vh;
+}
+
+
+
+
+.banner-content {
+  flex: 1;
+  background-color: #122921;
+  color: #ffffff;
+  padding: 60px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+
+
+.subtitle {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #a0a0a0;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+}
+
+
+
+
+.subtitle::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 20px;
+  height: 2px;
+  background-color: #e04e38;
+}
+
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+
+.highlight {
+  font-style: italic;
+  color: #e04e38;
+}
+
+.description {
+  font-size: 1rem;
+  color: #cccccc;
+  max-width: 400px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.btn-whatsapp {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+ 
+}
+
+
+.banner-image {
+  flex: 1;
+}
+
+.banner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .banner-section {
+    flex-direction: column;
+  }
+ 
+  .banner-content {
+    padding: 40px 20px;
+  }
+}
