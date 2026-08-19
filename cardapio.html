@@ -1,219 +1,256 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-    <metacardapio.css charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="cardapio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="cardapio.css">
+
+    <title>Ritual Café</title>
 </head>
 
- <header>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet">
-        <img src="logo footer.png" alt="" class="logo">
+<body>
+
+    <header>
+        <img src="logo footer.png" alt="Logo Ritual Café" class="logo">
+
         <nav>
-            <a href="#" class="especial" >Home</a>
+            <a href="#" class="especial">Home</a>
             <a href="#">Cardápio</a>
             <a href="#">Sobre nós</a>
             <a href="#">Contato</a>
         </nav>
+
         <a href="#">VER O CARDÁPIO</a>
     </header>
 
-    
+    <section class="hero">
 
-    <body>
+        <div class="hero-text">
 
-        <section class="hero">
+            <p class="frase">
+                <span class="linha"></span>
+                CAFÉ, COMIDA E PAUSA BOA
+            </p>
 
-            <div class="hero-text">
-                
-                <p class="frase">
-           <span class="linha"></span>
-              CAFÉ, COMIDA E PAUSA BOA
-             </p>
-                
-                <h1 class="mini-titulo">
-                    O seu ritual<br>
-                    começa <em>aqui.</em>
-                </h1>
+            <h1 class="mini-titulo">
+                O seu ritual<br>
+                começa <em>aqui.</em>
+            </h1>
+
+            <p>
+                Cafés especiais, ingredientes bons e escolhas que
+                acompanham a sua hora — do primeiro gole ao último.
+            </p>
+
+            <a href="#" class="botao">
+                VER PRODUTOS
+            </a>
+
+        </div>
+
+        <div class="hero-imagem">
+            <img src="images/product-cold-brew-hero.jpg" alt="Café gelado">
+        </div>
+
+    </section>
+
+    <main class="produtos">
+
+        <div class="produtos-topo">
+
+            <span class="mini-titulo">
+                FEITO PARA A SUA PAUSA
+            </span>
+
+            <h2>
+                Escolha o seu <em>momento.</em>
+            </h2>
+
+        </div>
+
+        <nav class="filtros">
+            <a href="#">TODOS</a>
+            <a href="#">CAFÉS QUENTES</a>
+            <a href="#">GELADOS</a>
+            <a href="#">PARA COMER</a>
+        </nav>
+
+        <p class="resultado">6 PRODUTOS</p>
+
+        <section class="grid-produtos">
+
+            <article class="card">
+
+                <div class="imagem-card">
+                    <img src="images/product-espresso.jpg" alt="Espresso da casa">
+                    <span>Intenso e equilibrado</span>
+                </div>
+
+                <h3>Espresso da casa</h3>
 
                 <p>
-                    Cafés especiais, ingredientes bons e escolhas que
-                    acompanham a sua hora — do primeiro gole ao último.
+                    Café espresso, notas de caramelo e chocolate.
                 </p>
 
-                <a href="#" class="botao">
-                    VER PRODUTOS
-                </a>
-            </div>
+                <strong>R$ 7,90</strong>
 
-            <div class="hero-imagem">
-                <img src="images/product-cold-brew-hero.jpg" alt="Café gelado">
-            </div>
+            </article>
+
+            <article class="card">
+
+                <div class="imagem-card">
+                    <img src="images/product-cold-brew-tonica.jpg" alt="Cold brew tônica">
+                    <span>Extração Fria</span>
+                </div>
+
+                <h3>Cold brew tônica</h3>
+
+                <p>
+                    Café extraído a frio com água tônica.
+                </p>
+
+                <strong>R$ 14,90</strong>
+
+            </article>
+
+            <article class="card">
+
+                <div class="imagem-card">
+                    <img src="images/product-toast-cogumelos.jpg" alt="Toast de cogumelos">
+                    <span>Fornada do dia</span>
+                </div>
+
+                <h3>Toast de cogumelos</h3>
+
+                <p>
+                    Pão artesanal, cogumelos e ovo.
+                </p>
+
+                <strong>R$ 18,90</strong>
+
+            </article>
 
         </section>
 
+    </main>
 
+    <main class="produtos">
 
-        <main class="produtos">
-            <div class="produtos-topo">
+        <section class="grid-produtos">
 
-                <span class="mini-titulo">
-                    FEITO PARA A SUA PAUSA
-                </span>
-                <h2>
-                    Escolha o seu <em>momento.</em>
-                </h2>
+            <article class="card">
 
-            </div>
-            <nav class="filtros">
-                <a href="#">TODOS</a>
-                <a href="#">CAFÉS QUENTES</a>
-                <a href="#">GELADOS</a>
-                <a href="#">PARA COMER</a>
-            </nav>
-            <p class="resultado">6 PRODUTOS</p>
-            <section class="grid-produtos">
+                <div class="imagem-card">
+                    <img src="images/product-coado.jpg" alt="Coado do dia">
+                    <span>Grão da semana</span>
+                </div>
 
-                <article class="card">
-                    <div class="imagem-card">
-                        <img src="images/product-espresso.jpg" alt="Espresso da casa">
-                        <span>Intenso e equilibrado</span>
-                    </div>
+                <h3>Coado do dia</h3>
 
-                    <h3>Espresso da casa</h3>
-                    <p>
-                        Café espresso, notas de caramelo e chocolate.
-                    </p>
-                    <strong>R$ 7,90</strong>
+                <p>
+                    Um grão novo, uma pausa diferente.
+                </p>
 
-                </article>
-                <article class="card">
+                <strong>R$ 14</strong>
 
-                    <div class="imagem-card">
-                        <img src="images/product-cold-brew-tonica.jpg" alt="Cold brew tônica">
+            </article>
 
-                        <span>Extração Fria </span>
-                    </div>
-                    <h3>Cold brew tônica</h3>
-                    <p>
-                        Café extraído a frio com água tônica.
-                    </p>
+            <article class="card">
 
-                    <strong>R$ 14,90</strong>
-                </article>
+                <div class="imagem-card">
+                    <img src="images/product-pao-de-queijo.jpg" alt="Pão de queijo da casa">
+                    <span>Quentinho no forno</span>
+                </div>
 
+                <h3>Pão de queijo da casa</h3>
 
-                <article class="card">
-                    <div class="imagem-card">
-                        <img src="images/product-toast-cogumelos.jpg" alt="Toast de cogumelos">
+                <p>
+                    Casquinha dourada e queijo canastra.
+                </p>
 
-                        <span>Fornada do dia</span>
-                    </div>
-                    <h3>Toast de cogumelos</h3>
-                    <p>
-                        Pão artesanal, cogumelos e ovo.
-                    </p>
-                    <strong>R$ 18,90</strong>
-                </article>
-            </section>
-        </main>
+                <strong>R$ 12</strong>
 
+            </article>
 
-        <main class="produtos">
-            <div class="produtos-topo">
-                <span class="mini-titulo">
-                </span>
-                <h2>
-                </h2>
+            <article class="card">
 
-            </div>
+                <div class="imagem-card">
+                    <img src="images/product-matcha.jpg" alt="Matcha gelado">
+                    <span>Leve e cremoso</span>
+                </div>
 
+                <h3>Matcha Gelado</h3>
 
+                <p>
+                    Leite, matcha cerimonial e baunilha.
+                </p>
 
+                <strong>R$ 19</strong>
 
+            </article>
 
-            <section class="grid-produtos">
-                <article class="card">
-                    <div class="imagem-card">
-                        <img src="images/product-coado.jpg" alt="Espresso da casa">
-                        <span>Grão da semana</span>
-                    </div>
-                    <h3>Coado do dia</h3>
-                    <p>
-                        Um grão novo,uma pausa diferente
-                    </p>
-                    <strong>R$ 14</strong>
-                </article>
-                <article class="card">
-                    <div class="imagem-card">
-                        <img src="images/product-pao-de-queijo.jpg" alt="Cold brew tônica">
-                        <span>Quentinho no forno</span>
-                    </div>
-                    <h3>Pão de queijo da casa </h3>
-                    <p>
-                        casquinha dourada e queijo canastra 
-                    </p>
+        </section>
 
-                    <strong>R$ 12</strong>
-                </article>
-                <article class="card">
+    </main>
 
-                    <div class="imagem-card">
-                        <img src="images/product-matcha.jpg" alt="Toast de cogumelos">
+    <section class="banner-section">
 
-                        <span>Leve e cremoso</span>
-                    </div>
-                    <h3>Matcha Gelado</h3>
-                    <p>
-                        Leite,matcha cerimonal e baunilha
-                    </p>
-                    <strong>R$ 19</strong>
+        <div class="banner-content">
 
-                </article>
+            <span class="subtitle">
+                PARA QUEM FICA MAIS UM POUCO
+            </span>
 
-            </section>
+            <h1 class="title">
+                Mais para <span class="highlight">dividir.</span>
+            </h1>
 
-        </main>
+            <p class="description">
+                Combos pensados para acompanhar bons momentos
+                e deixar a mesa ainda melhor.
+            </p>
 
-        <section class="banner-section">
-  
-  <div class="banner-content">
-    <span class="subtitle">PARA QUEM FICA MAIS UM POUCO</span>
-    <h1 class="title">Mais para <span class="highlight">dividir.</span></h1>
-    <p class="description">
-      Combos pensados para acompanhar bons momentos e deixar a mesa ainda melhor.
-    </p>
-    <a href="#" class="btn-whatsapp">PEDIR PELO WHATSAPP &nearr;</a>
-  </div>
+            <a href="#" class="btn-whatsapp">
+                PEDIR PELO WHATSAPP &nearr;
+            </a>
 
-  
-  <div class="banner-image">
-    <img src="images/share-table.jpg" alt="Lanches e molhos">
-  </div>
-</section>
+        </div>
 
-        <footer class="footer">
-  <div class="footer-logo">
-    <img src="2b720145-b18e-4510-a2a8-6a34099f7791.png" alt="" class="logo-img">
-  </div>
+        <div class="banner-image">
+            <img src="images/share-table.jpg" alt="Lanches e molhos">
+        </div>
 
-  <div class="footer-tagline">
-    feito com café, tempo e cuidado.
-  </div>
+    </section>
 
-  <div class="footer-copyright">
-    &copy; 2025 Ritual Café
-  </div>
-</footer>
+    <footer class="footer">
 
+        <div class="footer-logo">
+            <img
+                src="2b720145-b18e-4510-a2a8-6a34099f7791.png"
+                alt="Logo Ritual Café"
+                class="logo-img">
+        </div>
 
+        <div class="footer-tagline">
+            feito com café, tempo e cuidado.
+        </div>
 
-    </body>
+        <div class="footer-copyright">
+            &copy; 2025 Ritual Café
+        </div>
+
+    </footer>
+
+</body>
 
 </html>
+
