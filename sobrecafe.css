@@ -1,63 +1,70 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 
 body {
-    background-color: #F4EFE5;
-    color: #172923;
-    font-family: "IBM Plex Mono", monospace;
+  background-color: #F4EFE5;
+  color: #172923;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 
 a {
-    color: #172923;
-    text-decoration: none;
+  color: #172923;
+  text-decoration: none;
 }
+
 
 header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 300px;
+  height: 80px;
+
+
+
+
+  a {
+    font-weight: 500;
+  }
+
+
+
+
+  .logo {
+    width: 150px;
+  }
+
+
+
+
+  nav {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 300px;
-    height: 80px;
+    gap: 20px;
+
+
+
 
     a {
-        font-weight: 500;
+      font-weight: 500;
+      font-family: Arial;
     }
+  }
 
-    .logo {
-        width: 150px;
-    }
-
-    nav {
-        display: flex;
-        gap: 20px;
-
-        a {
-            font-weight: 500;
-            font-family: Arial;
-        }
-    }
-
-    .especial {
-        display: inline;
-       
-    }
-
-nav a {
+  nav a {
     color: rgb(0, 0, 0);
     text-decoration: none;
-    font-size: 18px;
     position: relative;
     transition: color 0.4s ease;
-}
+  }
 
-nav a::after {
-   
- content: "";
+
+  nav a::after {
+    content: "";
     position: absolute;
     left: 0;
     bottom: -5px;
@@ -65,68 +72,93 @@ nav a::after {
     height: 2px;
     background-color: #d43737;
     transition: width 0.4s ease;
-}
+  }
 
-nav a:hover::after {
+
+
+
+  nav a:hover::after {
     width: 100%;
-}
+  }
+
+  .especial {
+    nav a {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      font-size: 18px;
+      position: relative;
+      transition: color 0.4s ease;
+    }
+
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 0;
+      height: 2px;
+      background-color: #d43737;
+      transition: width 0.4s ease;
+    }
+  }
 }
 
 .hero {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 
-    .fundo-img {
-        background-image: url(about-hero.jpg);
-        height: 750px;
-        background-position: center;
-        background-size: cover;
-        width: 50%;
-    }
+  .fundo-img {
+    background-image: url(images/about-hero.jpg);
+    height: 750px;
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+  }
 
 }
 
 .principal {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 30px;
+  width: 50%;
+  justify-content: center;
+  background-color: #172923;
+
+
+  .comeco {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(203, 150, 113);
+  }
+
+  h2 {
+    font-family: "Arimo", sans-serif;
     display: flex;
-    flex-direction: column;
-    padding: 50px;
-    gap: 30px;
-    width: 50%;
-    justify-content: center;
-    background-color:  #172923;
+    color: #E9D9A3;
+    font-size: 30px;
+  }
 
+  h1 {
+    font-family: "Arimo", sans-serif;
+    display: flex;
+    color: antiquewhite;
+    font-size: 50px;
+  }
 
-    .comeco {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        color: rgb(203, 150, 113);
-    }
+  br {
+    color: aliceblue;
+  }
 
-    h2 {
-        font-family: "Arimo", sans-serif;
-        display: flex;
-        color:  #E9D9A3;
-        font-size: 30px;
-    }
-
-    h1 {
-        font-family: "Arimo", sans-serif;
-        display: flex;
-        color: antiquewhite;
-        font-size: 50px;
-    }
-
-    br{
-        color: aliceblue;
-    }
-
-    p{
-        color: aliceblue;
-    }
+  p {
+    color: aliceblue;
+  }
 
 }
 
 
-.fundo{
+.fundo {
   margin: 0;
   padding: 40px;
   background-color: #f4eee3;
@@ -161,7 +193,7 @@ nav a:hover::after {
   top: 15%;
   height: 70%;
   width: 1px;
- background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .fundado .number {
@@ -194,7 +226,7 @@ cabeca {
 }
 
 /* Cabeçalho */
-.xicara{
+.xicara {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -291,18 +323,19 @@ cabeca {
 }
 
 .pessoas {
-    width: 100%;
+  width: 100%;
 }
 
 .pessoas {
-  background-color: #E6D9A5; /* Amarelo exato da imagem */
+  background-color: #E6D9A5;
+  /* Amarelo exato da imagem */
   padding: 60px 40px;
   width: 100%;
   box-sizing: border-box;
 }
 
 /* Envolvente do conteúdo para manter alinhado e centralizado */
-.pessoas .pessoa, 
+.pessoas .pessoa,
 .pessoas .theo {
   max-width: 1100px;
   margin-left: auto;
@@ -345,7 +378,8 @@ cabeca {
 .card {
   flex: 1;
   display: flex;
-  flex-direction: row; /* Foto à esquerda e texto à direita */
+  flex-direction: row;
+  /* Foto à esquerda e texto à direita */
   align-items: flex-start;
   gap: 20px;
 }
@@ -402,7 +436,7 @@ cabeca {
   justify-content: space-between;
   align-items: center;
   background-color: #22362f;
- color: #ffffff;
+  color: #ffffff;
   padding: 20px 40px;
   font-family: sans-serif;
   font-size: 14px;
@@ -420,7 +454,7 @@ cabeca {
 
 .logo-img {
   width: 150px;
- 
+
 }
 
 
@@ -520,7 +554,7 @@ cabeca {
   text-decoration: none;
   font-size: 0.85rem;
   letter-spacing: 1px;
- 
+
 }
 
 
@@ -538,7 +572,7 @@ cabeca {
   .banner-section {
     flex-direction: column;
   }
- 
+
   .banner-content {
     padding: 40px 20px;
   }
