@@ -1,0 +1,614 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #F4EFE5;
+    color: #172923;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+
+a {
+    color: #172923;
+    text-decoration: none;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+    height: 80px;
+
+
+    a {
+        font-weight: 500;
+    }
+
+
+    .logo {
+        width: 150px;
+    }
+
+
+    nav {
+        display: flex;
+        gap: 20px;
+
+
+        a {
+            font-weight: 500;
+            font-family: Arial;
+        }
+    }
+
+
+    .especial {
+        display: inline;
+       
+    }
+}
+
+nav {
+    display: flex;
+    gap: 90px;
+      
+        height: 0px;
+        margin-left: -100px;
+        display: flex;
+        align-items: center;
+        border-radius: 15px;
+        padding: 30px; 
+    
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.4s ease;
+}
+
+
+
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.4s ease;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #d43737;
+    transition: width 0.4s ease;
+}
+
+
+nav a:hover::after {
+    width: 100%;
+}
+
+
+
+.hero {
+    width: 100%;
+    height: 600px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+
+.hero-text {
+    background: #e8d99d;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 50px 12%;
+}
+
+.frase {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.linha {
+    width: 40px;
+    height: 3px;
+    background-color: #b9362b;
+    display: inline-block;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 4vw, 58px);
+    line-height: 0.95;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.hero h1 em,
+.produtos h2 em {
+    color: #a9432e;
+    font-style: italic;
+}
+
+.hero p {
+    max-width: 330px;
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+
+
+
+.botao {
+    width: fit-content;
+
+    padding: 21px 55px;
+
+    background: #17211d;
+    color: white;
+
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+
+    text-decoration: none;
+    letter-spacing: .5px;
+}
+
+
+
+
+.hero-imagem {
+    overflow: hidden;
+}
+
+.hero-imagem img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+
+
+.produtos {
+    max-width: 1400px;
+    margin: auto;
+
+    padding: 56px 5% 80px;
+}
+
+
+
+.produtos-topo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 45px;
+}
+
+.produtos-topo .mini-titulo {
+    margin-top: 20px;
+}
+
+.produtos h2 {
+    font-size: 45px;
+    font-weight: 300;
+    line-height: 1;
+}
+
+
+
+.filtros {
+    display: flex;
+    justify-content: flex-start;
+    gap: 25px;
+    margin-left: 1px;
+    display: flex;
+    border-bottom: 1px solid #ddd7c9;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    margin-left: -30px;
+}
+
+.filtros a {
+    color: #797466;
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+
+    text-decoration: none;
+}
+
+.filtros a:first-child {
+    color: #222;
+    font-weight: bold;
+}
+
+
+
+.resultado {
+    margin-top: 10px;
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+
+    color: #8d8779;
+}
+
+
+
+
+.grid-produtos {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-top: 15px;
+}
+
+
+
+
+
+.card {
+    min-width: 0;
+}
+
+.imagem-card {
+    height: 400px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.imagem-card img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+
+
+.imagem-card span {
+    position: absolute;
+
+    right: 15px;
+    bottom: 15px;
+
+    background: #fafafa;
+
+    padding: 12px 7px;
+    height: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+
+    color: #000000;
+}
+
+
+
+
+.card h3 {
+    font-size: 25px;
+    font-weight: 400;
+
+    margin-top: 20px;
+}
+
+
+
+.card p {
+    font-family: Arial, sans-serif;
+
+    color: #888174;
+
+    font-size: 15px;
+    line-height: 1.5;
+
+    margin-top: 5px;
+}
+
+
+
+
+.card strong {
+    display: block;
+
+    margin-top: 8px;
+
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+
+
+
+@media (max-width: 800px) {
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-text {
+        min-height: 300px;
+        padding: 45px ;
+    }
+
+    .hero-imagem {
+        height: 350px;
+    }
+
+    .produtos {
+        padding: 45px ;
+    }
+
+    .produtos-topo {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .grid-produtos {
+        grid-template-columns: 1fr;
+    }
+
+    .imagem-card {
+        height: 350px;
+    }
+}
+
+
+
+.hero {
+    width: 100%;
+    min-height: 335px;
+
+    display: grid;
+  
+}
+
+
+
+
+.conteiner-text {
+    background: #22362f;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 50px 12%;
+}
+
+.mini-titulo {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    align-items: center;
+    letter-spacing: 2.5px;
+    color: #81775c;
+    margin-bottom: 18px;
+}
+
+.conteiner h1 {
+    font-size: clamp 38px;
+    line-height: 0.95;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.conteiner h1 em,
+.produtos h2 em {
+    color: #a9432e;
+    font-style: italic;
+}
+
+.conteiner p {
+    max-width: 330px;
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+
+    color: #746e5b;
+    margin-bottom: 20px;
+}
+
+
+
+
+.botao {
+    width: fit-content;
+
+    padding: 21px 55px;
+
+    background: #17211d;
+   
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+
+    text-decoration: none;
+    letter-spacing: .5px;
+}
+
+
+
+
+.conteiner-imagem {
+    overflow: hidden;
+}
+
+.conteiner-imagem img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #22362f; 
+ color: #ffffff;
+  padding: 20px 40px;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 150px;
+  
+}
+
+.logo-text {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+
+.footer-tagline {
+  opacity: 0.8;
+}
+
+.footer-copyright {
+  opacity: 0.8;
+}
+
+
+
+.banner-section {
+  display: flex;
+  min-height: 80vh; 
+}
+
+
+.banner-content {
+  flex: 1;
+  background-color: #122921; 
+  color: #ffffff;
+  padding: 60px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+.subtitle {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #a0a0a0;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+}
+
+
+.subtitle::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 20px;
+  height: 2px;
+  background-color: #e04e38;
+}
+
+.title {
+  font-family: 'Playfair Display', serif; 
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  font-style: italic;
+  color: #e04e38; 
+}
+
+.description {
+  font-size: 1rem;
+  color: #cccccc;
+  max-width: 400px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+
+.btn-whatsapp {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  
+}
+
+
+.banner-image {
+  flex: 1;
+}
+
+.banner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+
+@media (max-width: 768px) {
+  .banner-section {
+    flex-direction: column;
+  }
+  
+  .banner-content {
+    padding: 40px 20px;
+  }
+}
