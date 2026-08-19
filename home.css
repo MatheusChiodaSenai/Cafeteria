@@ -288,6 +288,11 @@ section {
         background-color: #172923;
         color: #F4EFE5;
         border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #29483e;
 
     }
 }
